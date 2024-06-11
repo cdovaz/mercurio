@@ -6,34 +6,52 @@
     background-image: url("src/assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
     height: 99.98vh;
     width: 99.98vw;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0 2em;
+    gap: 2em;
 }
 
 .mainText{
     color: white;
-    padding: 5vw;
 }
 .mainInputs{
-    padding: 5vh;
-    margin-top: 50vh;
+    padding: 4em 4em 6em 4em;
+    align-self: flex-end;
     background-color: white;
+    border-radius: 32px 32px 0 0;
+    min-height: 70%;
 }
 .form{
     display: flex;
     flex-direction: column;
-    width: 15vw;
 }
 .input{
     padding: 0.5vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    border-radius: 8px;
+    border: 1px solid rgb(24, 22, 21);
+    padding: .8em;
 }
 
 .button{
     padding: 0.5vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    background-color: rgb(24, 22, 21);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: .8em;
+    cursor: pointer;
+}
+
+.bottomText{
+    text-align: center;
 }

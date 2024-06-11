@@ -1,7 +1,13 @@
 .navBar {
     background-color: black;
     display: flex;
-    width: 99.98vw;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.logo {
+    position: relative;
+    bottom: -8px;
 }
 
 .navText {
@@ -13,31 +19,28 @@
     background-image: url("src/assets/BackgroundHome.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    min-height: 60vh;
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
 }
 
 .headerDiv1 {
     margin: 0;
     width: 22vw;
     font-size: 36px;
-    margin-left: 6vw;
-    margin-top: 6vw;
     color: #D9D9D9;
 }
 
 .buttonDiv1 {
-    width: 14vw;
+    width: 15em;
     background-color: rgba(36, 35, 43, 0.73);
     color: #D9D9D9;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-left: 6vw;
-    margin-top: 1vw;
+    padding: 1em;
     border: none;
-    margin-bottom: 12vh;
 }
 
 .buttonDiv1:hover {
@@ -53,19 +56,19 @@
 }
 
 .backgroundSubDiv1 {
-    background-color: rgba(217, 217, 217, 0.73);
+    background-color: rgba(217, 217, 217, 0.5);
     height: 100%;
-    padding: 5vw;
+    padding: 5em;
+    display: flex;
 
 }
 
 .explainSubDiv1 {
     background-color: rgba(217, 217, 217, 1);
-    width: 35vw;
-    margin-left: 5vw;
-    margin-bottom: 2vw;
-    padding: 3vw;
-    font-size: 24px;
+    width: 40%;
+    min-width: 300px;
+    padding: 2em;
+    font-size: 20px;
 }
 
 .backgroundDiv3 {
@@ -75,46 +78,67 @@
 
 .backgroundSubDiv3 {
     display: flex;
-    padding: 5%;
-    border: solid 1px black
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border: solid 1px black;
+}
+
+.backgroundSubDiv3 img {
+    align-self: center;
 }
 
 .textSubDiv3 {
-    padding: 5%;
-    font-size: 1.6em;
+    flex: 1;
+    font-size: 1.2em;
 }
-
 
 .backgroundDiv4 {
     background-image: url("src/assets/BackgroundHome3.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
-    width: 99.98vw;
+    background-position: center center;
+    height: 15em;
 }
 
 .backgroundDiv5 {
-    background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(115, 115, 115, 1));
+    background-image: linear-gradient(to bottom, rgb(200, 200, 200), rgb(100, 100, 100));
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 2em;
 }
 
 .backgroundSubDivComponent5 {
     display: flex;
     flex-direction: column;
-    width: 15vw;
-    background-color: rgba(217, 217, 217, 0.65);
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 3vw;
-    padding: 1.2%;
+    gap: 1em;
+    width: 280px;
+    padding: 1em;
     font-size: 1.2em;
-
+    background-color: rgba(150, 150, 150, 0.7);
 }
 
 .backgroundDiv6{
     background-color: rgba(32, 52, 14, 1);
     color: white;
-    height: 19vh;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.backgroundDiv6 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.backgroundDiv6 > div > div > img {
+    width: 64px;
 }

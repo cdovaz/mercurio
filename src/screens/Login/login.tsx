@@ -1,17 +1,18 @@
 import styles from './login.module.css'
 import { login } from '../../firebase/firebase';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export default function Login() {
-
+    const navigate = useNavigate();
     const handleSubmit = async (event: any) => {
         event.preventDefault();
-
+        
         try {
 
             const emailInput = document.getElementById("email") as HTMLInputElement;
             const passwordInput = document.getElementById('senha') as HTMLInputElement;
             if (emailInput && passwordInput) {
                 await login(emailInput.value, passwordInput.value);
+                navigate('/main')
             } else {
                 console.error("Inputs não encontrados.");
             }

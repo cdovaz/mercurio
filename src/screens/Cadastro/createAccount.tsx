@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { createAccount } from '../../firebase/firebase';
-import styles from './createAccount.module.css'
+import styles from '../Login/login.module.css';
 
 export default function CreateAccount() {
     const navigate = useNavigate();
@@ -11,13 +11,13 @@ export default function CreateAccount() {
             const nameInput = document.getElementById("name") as HTMLInputElement;
             const emailInput = document.getElementById("email") as HTMLInputElement;
             const passwordInput = document.getElementById('senha') as HTMLInputElement;
-            
+
             var customData = {
                 nome: nameInput.value,
                 email: emailInput.value
             }
             if (emailInput && passwordInput) {
-                await createAccount(emailInput.value, passwordInput.value, customData );
+                await createAccount(emailInput.value, passwordInput.value, customData);
             } else {
                 console.error("Inputs não encontrados.");
             }

@@ -13,10 +13,11 @@ export default function Menu() {
                     Dados Armazenados
                 </div>
             </div>
+
             <div className={styles.div2}>
                 <div className={styles.fastAccess}>
                     <h1>Acesso rápido</h1>
-                    <div style={{display: 'flex'}}>
+                    <div>
                         <div className={styles.folders}>
                             <img src="src/assets/PastaIcon.svg" alt="" />
                             <div>Dispositivo - 1</div>
@@ -35,36 +36,54 @@ export default function Menu() {
                         </div>
                     </div>
                 </div>
+
                 <div className={styles.favorites}>
                     <h1>Favoritos</h1>
                     <div>Depois de adicionar algum arquivo aos favoritos será mostrado aqui </div>
                 </div>
+
                 <div className={styles.recents}>
                     <h1>Recentes</h1>
-                    <div style={{display: 'flex', flexDirection: 'column'}}>
+                    <div>
                         <div className={styles.componentRecent}>
-                            <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                            <div style={{marginLeft: '1vw'}}>Dados Coletados</div>
-                            <div style={{marginLeft: '6vw'}}> 13/10/2006 00:00</div>
-                            <img src="src/assets/check.svg" alt="" />
+                            <div>
+                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
+                                <p>Dados Coletados</p>
+                            </div>
+                            <div>
+                                <p> 13/11/2006 00:00</p>
+                                <img src="src/assets/check.svg" alt="" />
+                            </div>
                         </div>
                         <div className={styles.componentRecent}>
-                            <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                            <div style={{marginLeft: '1vw'}}>Dados Coletados</div>
-                            <div style={{marginLeft: '6vw'}}> 13/10/2006 00:00</div>
-                            <img src="src/assets/check.svg" alt="" />
+                            <div>
+                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
+                                <p>Dados Coletados</p>
+                            </div>
+                            <div>
+                                <p> 13/11/2006 00:00</p>
+                                <img src="src/assets/check.svg" alt="" />
+                            </div>
                         </div>
                         <div className={styles.componentRecent}>
-                            <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                            <div style={{marginLeft: '1vw'}}>Dados Coletados</div>
-                            <div style={{marginLeft: '6vw'}}> 13/10/2006 00:00</div>
-                            <img src="src/assets/check.svg" alt="" />
+                            <div>
+                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
+                                <p>Dados Coletados</p>
+                            </div>
+                            <div>
+                                <p> 13/11/2006 00:00</p>
+                                <img src="src/assets/check.svg" alt="" />
+                            </div>
                         </div>
                         <div className={styles.componentRecent}>
-                            <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                            <div style={{marginLeft: '1vw'}}>Dados Coletados</div>
-                            <div style={{marginLeft: '6vw'}}> 13/10/2006 00:00</div>
-                            <img src="src/assets/check.svg" alt="" />
+                            <div>
+                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
+                                <p>Dados Coletados</p>
+                            </div>
+                            <div>
+                                <p> 13/11/2006 00:00</p>
+                                <img src="src/assets/check.svg" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
