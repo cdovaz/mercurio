@@ -1,0 +1,39 @@
+.whiteSquare{
+    background-color: white;
+}
+
+.mainDiv{
+    background-image: url("src/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 99.98vh;
+    width: 99.98vw;
+    display: flex;
+}
+
+.mainText{
+    color: white;
+    padding: 5vw;
+}
+.mainInputs{
+    padding: 5vh;
+    margin-top: 50vh;
+    background-color: white;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+.input{
+    padding: 0.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.button{
+    padding: 0.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}

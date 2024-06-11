@@ -1,0 +1,120 @@
+.navBar {
+    background-color: black;
+    display: flex;
+    width: 99.98vw;
+}
+
+.navText {
+    color: white;
+    font-size: 30px;
+}
+
+.backgroundDiv1 {
+    background-image: url("src/assets/BackgroundHome.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerDiv1 {
+    margin: 0;
+    width: 22vw;
+    font-size: 36px;
+    margin-left: 6vw;
+    margin-top: 6vw;
+    color: #D9D9D9;
+}
+
+.buttonDiv1 {
+    width: 14vw;
+    background-color: rgba(36, 35, 43, 0.73);
+    color: #D9D9D9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 6vw;
+    margin-top: 1vw;
+    border: none;
+    margin-bottom: 12vh;
+}
+
+.buttonDiv1:hover {
+    background-color: rgba(36, 35, 43, 0.93);
+    transition: background-color 0.1s ease;
+    /* Adiciona uma transição suave */
+}
+
+.backgroundDiv2 {
+    background-image: url("src/assets/BackgroundHome2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundSubDiv1 {
+    background-color: rgba(217, 217, 217, 0.73);
+    height: 100%;
+    padding: 5vw;
+
+}
+
+.explainSubDiv1 {
+    background-color: rgba(217, 217, 217, 1);
+    width: 35vw;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    padding: 3vw;
+    font-size: 24px;
+}
+
+.backgroundDiv3 {
+    background-color: #D9D9D9;
+
+}
+
+.backgroundSubDiv3 {
+    display: flex;
+    padding: 5%;
+    border: solid 1px black
+}
+
+.textSubDiv3 {
+    padding: 5%;
+    font-size: 1.6em;
+}
+
+
+.backgroundDiv4 {
+    background-image: url("src/assets/BackgroundHome3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 99.98vw;
+}
+
+.backgroundDiv5 {
+    background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(115, 115, 115, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundSubDivComponent5 {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    background-color: rgba(217, 217, 217, 0.65);
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 3vw;
+    padding: 1.2%;
+    font-size: 1.2em;
+
+}
+
+.backgroundDiv6{
+    background-color: rgba(32, 52, 14, 1);
+    color: white;
+    height: 19vh;
+}

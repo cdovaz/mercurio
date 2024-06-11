@@ -1,0 +1,50 @@
+.mainDiv {
+    background-color: rgba(229, 229, 229, 1);
+}
+.navBar {
+    background-color: rgba(166, 165, 171, 1);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navBarNovo {
+    display: flex;
+    margin-right: 42vw;
+    align-items: center;
+}
+.navBarTittle {
+    text-align: center;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.fastAccess{
+    width: 50vw;
+}
+.folders{
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: rgba(166, 165, 171, 1);
+}
+.favorites{
+    width: 50vw;
+}
+.recents{
+    width: 50vw;
+}
+.componentRecent{
+    display: flex;
+    background-color:rgba(166, 165, 171, 0.5);
+    width: 48vw;
+    margin-bottom: 1vh;
+}
