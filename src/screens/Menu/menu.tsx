@@ -48,40 +48,40 @@ export default function Menu() {
                         <div className={styles.componentRecent}>
                             <div>
                                 <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>Dados Coletados</p>
+                                <p>15.3g encontrados de Estanho </p>
                             </div>
                             <div>
-                                <p> 13/11/2006 00:00</p>
+                                <p> 08/06/2024 13:26</p>
                                 <img src="src/assets/check.svg" alt="" />
                             </div>
                         </div>
                         <div className={styles.componentRecent}>
                             <div>
                                 <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>Dados Coletados</p>
+                                <p>5.7g encontrados de Mercúrio</p>
                             </div>
                             <div>
-                                <p> 13/11/2006 00:00</p>
+                                <p> 08/06/2024 13:35</p>
                                 <img src="src/assets/check.svg" alt="" />
                             </div>
                         </div>
                         <div className={styles.componentRecent}>
                             <div>
                                 <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>Dados Coletados</p>
+                                <p>2.2g encontrados de Mercúrio</p>
                             </div>
                             <div>
-                                <p> 13/11/2006 00:00</p>
+                                <p> 08/06/2024 13:54</p>
                                 <img src="src/assets/check.svg" alt="" />
                             </div>
                         </div>
                         <div className={styles.componentRecent}>
                             <div>
                                 <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>Dados Coletados</p>
+                                <p>4.1g encontrados de Estanho</p>
                             </div>
                             <div>
-                                <p> 13/11/2006 00:00</p>
+                                <p> 08/06/2024 14:08</p>
                                 <img src="src/assets/check.svg" alt="" />
                             </div>
                         </div>

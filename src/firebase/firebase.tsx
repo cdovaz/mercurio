@@ -74,34 +74,11 @@ export async function setUser(customData: { agrupamento: string; cpf: string; no
         console.log(error.message);
     })
 }
-
-export async function getGrouping() {
+export async function getData(){
     const db = getFirestore(app);
-
-    var ref = collection(db, "agrupamento");
-    var agrupamentoQuery = query(ref, orderBy("agrupamento"))
-
-    const snapshot = await getDocs(agrupamentoQuery);
+    var ref = collection(db, 'dados');
+    var dataQuery = query(ref);
+    const snapshot = await getDocs(dataQuery);
     const data = snapshot.docs.map((doc) => doc.data());
     return data;
-
-}
-export async function getMembersOfAGrouping(group: unknown) {
-    const db = getFirestore(app);
-
-    var ref = collection(db, "users");
-    var membersQuery = query(ref, where("agrupamento", "==", group))
-    const snapshot = await getDocs(membersQuery);
-    const data = snapshot.docs.map((doc) => doc.data());
-    return data
-}
-export async function getAllUsers() {
-    const db = getFirestore(app);
-
-    var ref = collection(db, "users");
-    var usersQuery = query(ref, orderBy("nome"))
-    const snapshot = await getDocs(usersQuery);
-    const data = snapshot.docs.map((doc) => doc.data());
-    return data
-
 }
