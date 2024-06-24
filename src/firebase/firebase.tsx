@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, User } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile} from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { collection, query, getDocs } from "firebase/firestore";
 
@@ -25,6 +25,7 @@ export function createAccount(email: string, password: string, customData: any) 
     createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
         const user = userCredential.user;
 
+
         updateProfile(user, customData).then(() => {
 
         }).catch((error) => {
@@ -37,7 +38,7 @@ export function createAccount(email: string, password: string, customData: any) 
 }
 export async function login(email: string, password: string) {
     var value
-    await signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
+    await signInWithEmailAndPassword(auth, email, password).then(() => {
         value = true
 
     }).catch((error) => {
