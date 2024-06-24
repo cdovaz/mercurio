@@ -18,7 +18,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-var user: User;
+
 
 
 export function createAccount(email: string, password: string, customData: any) {
@@ -38,7 +38,6 @@ export function createAccount(email: string, password: string, customData: any) 
 export async function login(email: string, password: string) {
     var value
     await signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
-        user = userCredential.user;
         value = true
 
     }).catch((error) => {
