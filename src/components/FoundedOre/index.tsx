@@ -6,13 +6,9 @@
 */
 
 export function FoundedOre({IsDetected, Quantity, Date, style2} : {IsDetected: boolean, Quantity: string, Date: string, style2: any}) {
-    var auxDetected;
     if(IsDetected){
-        auxDetected = 'Sim'
-    } else {
-        auxDetected = 'Não'
+        console.log("Teste")
     }
-
     return (
             <div className={style2}>
                 <div>

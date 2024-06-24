@@ -1,9 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, User } from "firebase/auth";
-import { setDoc, doc } from "firebase/firestore";
 import { getFirestore } from "firebase/firestore";
-import { collection, query, where, orderBy, limit, getDocs, addDoc, onSnapshot } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -43,37 +42,12 @@ export async function login(email: string, password: string) {
         value = true
 
     }).catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
         console.log(error.message)
         value = false
     })
     return value
 }
-export async function setUser(customData: { agrupamento: string; cpf: string; nome: any; dataDeNascimento: any; sexo: any; email: any; telefone: any; }) {
-    const db = getFirestore();
-    const docRef2 = doc(db, 'agrupamento', customData.agrupamento)
-    var docGroup = {
-        agrupamento: customData.agrupamento
-    }
-    await setDoc(docRef2, docGroup)
-    const docRef = doc(db, 'users', customData.cpf);
-    var docUser = {
-        CPF: customData.cpf,
-        nome: customData.nome,
-        dataDeNascimento: customData.dataDeNascimento,
-        sexo: customData.sexo,
-        email: customData.email,
-        telefone: customData.telefone,
-        agrupamento: customData.agrupamento,
-        registrador: user?.email ? user.email : 'Não acessível'
-    }
-    await setDoc(docRef, docUser).then(() => {
-        return true;
-    }).catch((error) => {
-        console.log(error.message);
-    })
-}
+
 export async function getData(){
     const db = getFirestore(app);
     var ref = collection(db, 'data');
