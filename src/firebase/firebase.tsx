@@ -76,7 +76,7 @@ export async function setUser(customData: { agrupamento: string; cpf: string; no
 }
 export async function getData(){
     const db = getFirestore(app);
-    var ref = collection(db, 'dados');
+    var ref = collection(db, 'data');
     var dataQuery = query(ref);
     const snapshot = await getDocs(dataQuery);
     const data = snapshot.docs.map((doc) => doc.data());

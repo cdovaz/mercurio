@@ -1,7 +1,18 @@
+import { useEffect, useState } from 'react';
+import { FoundedOre } from '../../components/FoundedOre'
 import styles from './menu.module.css'
+import { getData } from '../../firebase/firebase';
 
 export default function Menu() {
+    var [isToShow, setIsToShow] = useState(false);
+    var [data, setData] = useState([]);
 
+    useEffect( () => {
+        getData().then( (information : any) => { 
+            setData(information)
+            setIsToShow(true);
+        })
+    }, []);
     return (
         <div className={styles.mainDiv}>
             <div className={styles.navBar}>
@@ -45,49 +56,16 @@ export default function Menu() {
                 <div className={styles.recents}>
                     <h1>Recentes</h1>
                     <div>
-                        <div className={styles.componentRecent}>
-                            <div>
-                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>15.3g encontrados de Estanho </p>
-                            </div>
-                            <div>
-                                <p> 08/06/2024 13:26</p>
-                                <img src="src/assets/check.svg" alt="" />
-                            </div>
-                        </div>
-                        <div className={styles.componentRecent}>
-                            <div>
-                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>5.7g encontrados de Mercúrio</p>
-                            </div>
-                            <div>
-                                <p> 08/06/2024 13:35</p>
-                                <img src="src/assets/check.svg" alt="" />
-                            </div>
-                        </div>
-                        <div className={styles.componentRecent}>
-                            <div>
-                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>2.2g encontrados de Mercúrio</p>
-                            </div>
-                            <div>
-                                <p> 08/06/2024 13:54</p>
-                                <img src="src/assets/check.svg" alt="" />
-                            </div>
-                        </div>
-                        <div className={styles.componentRecent}>
-                            <div>
-                                <img src="src/assets/DadosColetadosImagem.svg" alt="" />
-                                <p>4.1g encontrados de Estanho</p>
-                            </div>
-                            <div>
-                                <p> 08/06/2024 14:08</p>
-                                <img src="src/assets/check.svg" alt="" />
-                            </div>
+                        
+                        {
+                            isToShow &&
+                                data.map((data : any) =>(
+                                <FoundedOre IsDetected={true} Quantity={data.Quantity} Date={data.Data} style2={styles.componentRecent}/> 
+                                ))
+                        }
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
