@@ -16,7 +16,7 @@
 }
 
 .backgroundDiv1 {
-    background-image: url("src/assets/BackgroundHome.png");
+    background-image: url("../public/assets/BackgroundHome.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60vh;
@@ -50,7 +50,7 @@
 }
 
 .backgroundDiv2 {
-    background-image: url("src/assets/BackgroundHome2.png");
+    background-image: url("../public/assets/BackgroundHome2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -95,7 +95,7 @@
 }
 
 .backgroundDiv4 {
-    background-image: url("src/assets/BackgroundHome3.png");
+    background-image: url("../public/assets/BackgroundHome3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

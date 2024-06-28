@@ -9,9 +9,9 @@ export default function Home() {
     return (
         <div>
             <div className={styles.navBar}>
-                <img src="src/assets/MenuMercurio.svg" alt="Menu" />
+                <img src="../public/assets/MenuMercurio.svg" alt="Menu" />
                 <p className={styles.navText}>MENU |</p>
-                <img src="src/assets/LogoSVG.svg" width="90px" height="70px" className={styles.logo} />
+                <img src="../public/assets/LogoSVG.svg" width="90px" height="70px" className={styles.logo} />
             </div>
 
             <div className={styles.backgroundDiv1}>
@@ -35,7 +35,7 @@ export default function Home() {
 
             <div className={styles.backgroundDiv3}>
                 <div className={styles.backgroundSubDiv3}>
-                    <img src="src/assets/indigena1.png" alt="indígena" />
+                    <img src="../public/assets/indigena1.png" alt="indígena" />
                     <p className={styles.textSubDiv3}>Em 1993, os Yanomami foram vítimas de um massacre
                         que ficou conhecido na justiça brasileira como o
                         primeiro caso de genocídio a ser
@@ -44,21 +44,21 @@ export default function Home() {
                         com garimpeiros ilegais invasores de suas terras.</p>
                 </div>
                 <div className={styles.backgroundSubDiv3}>
-                    <img src="src/assets/indigena2.png" alt="indígena" />
+                    <img src="../public/assets/indigena2.png" alt="indígena" />
                     <p className={styles.textSubDiv3}>Além da contaminação pelo mercúrio,
                         o garimpo ilegal também está fortemente ligado ao aumento no desmatamento,
                         à sedimentação dos rios, à grilagem de terras e ao aumento da violência no
                         seu entorno.</p>
                 </div>
                 <div className={styles.backgroundSubDiv3}>
-                    <img src="src/assets/indigena3.png" alt="indígena" />
+                    <img src="../public/assets/indigena3.png" alt="indígena" />
                     <p className={styles.textSubDiv3}>Efeitos no Sistema Cardiovascular:
                         Estudos mostraram que a exposição ao mercúrio está associada a distúrbios
                         cardiovasculares, incluindo pressão alta, ritmo cardíaco anormal e aumento
                         do risco de ataques cardíacos.</p>
                 </div>
                 <div className={styles.backgroundSubDiv3}>
-                    <img src="src/assets/indigena4.png" alt="indígena" />
+                    <img src="../public/assets/indigena4.png" alt="indígena" />
                     <p className={styles.textSubDiv3}>Como o mercúrio afeta a saúde, a
                         intoxicação de pessoas por mercúrio pode ocorrer pela ingestão de
                         alimentos contaminados (peixes com alta concentração de mercúrio,
@@ -70,21 +70,21 @@ export default function Home() {
 
             <div className={styles.backgroundDiv5}>
                 <div className={styles.backgroundSubDivComponent5}>
-                    <img src="src/assets/RectangleEnd1.png" alt="" className={styles.SubDivImg} />
+                    <img src="../public/assets/RectangleEnd1.png" alt="" className={styles.SubDivImg} />
                     <p>O projeto representa uma iniciativa ambiental,
                         onde um dos objetivos é a prevenção da prática do garimpo ilegal.
                         Através da possivel identificação e monitoração em areas afetadas
                         pela presença do mercúrio. </p>
                 </div>
                 <div className={styles.backgroundSubDivComponent5}>
-                    <img src="src/assets/RectangleEnd2.png" alt="" className={styles.SubDivImg} />
+                    <img src="../public/assets/RectangleEnd2.png" alt="" className={styles.SubDivImg} />
                     <p>A preservação da saúde ambiental é uma prioridade global,
                         especialmete em regiões onde a contaminação por mercúrio
                         nos rios é uma preocupação. O projeto vai garantir a melhora
                         da questão da saúde nesses ambientes.</p>
                 </div>
                 <div className={styles.backgroundSubDivComponent5}>
-                    <img src="src/assets/RectangleEnd3.png" alt="" className={styles.SubDivImg} />
+                    <img src="../public/assets/RectangleEnd3.png" alt="" className={styles.SubDivImg} />
                     <p>Facilitar a localização de mercúrio nos rios é um passo crucial
                         para proteger tanto os ecossistemas aquáticos quanto a saúde das
                         comunidades que dependem dessas águas. Portanto, o Mapinguari
@@ -95,7 +95,7 @@ export default function Home() {
             <div className={styles.backgroundDiv6}>
                 <div>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <img src="src/assets/LogoSVG.svg" alt="" />
+                        <img src="../public/assets/LogoSVG.svg" alt="" />
                         <p style={{ left: -5, bottom: 6.5, position: 'relative' }}>MAPINGUARI</p>
                     </div>
                     <div>
